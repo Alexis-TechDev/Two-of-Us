@@ -26,7 +26,6 @@ function App() {
             <Route path="/partner" element={<ProtectedRoute><Partner /></ProtectedRoute>} />
             <Route path="/chat/:conversationId" element={<ProtectedRoute><Chat /></ProtectedRoute>} />
             <Route path="/conversations" element={<ProtectedRoute><Conversations /></ProtectedRoute>} />
-            <Route path="/conversations" element={<ProtectedRoute><Conversations /></ProtectedRoute>}/>
           </Routes>
         </AppContainer>
       </MobileOnly>

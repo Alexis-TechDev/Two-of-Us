@@ -28,7 +28,7 @@ function protect(req, res, next) {
     req.user = decoded;
 
     next();
-  } catch (error) {
+  } catch {
     return res.status(401).json({
       message: "Invalid or expired token.",
     });

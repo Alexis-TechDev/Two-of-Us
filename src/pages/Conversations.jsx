@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import { useNavigate } from "react-router-dom";
+import API_URL from "../api";
 import "./Conversations.css";
 
-const socket = io("http://localhost:5000", {
+const socket = io(API_URL, {
   autoConnect: false,
 });
 
@@ -39,7 +40,7 @@ function Conversations() {
       try {
         const response =
           await fetch(
-            "http://localhost:5000/api/conversations",
+            `${API_URL}/api/conversations`,
             {
               headers: {
                 Authorization:
@@ -192,7 +193,7 @@ function Conversations() {
     setPhoneError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/profile-phone", {
+      const response = await fetch(`${API_URL}/api/auth/profile-phone`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

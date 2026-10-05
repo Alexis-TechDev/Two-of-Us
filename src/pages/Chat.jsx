@@ -11,12 +11,11 @@ import {
 
 import { io } from "socket.io-client";
 
+import API_URL from "../api";
 import "./Chat.css";
 
 
-const socket = io(
-  "http://localhost:5000",
-  {
+const socket = io(API_URL, {
     autoConnect: false,
   }
 );
@@ -383,7 +382,7 @@ function Chat() {
         reader.onerror = reject;
         reader.readAsDataURL(file);
       });
-      const response = await fetch("http://localhost:5000/api/auth/profile-picture", {
+      const response = await fetch(`${API_URL}/api/auth/profile-picture`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -403,7 +402,7 @@ function Chat() {
 
   async function saveProfilePhone() {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/profile-phone", {
+      const response = await fetch(`${API_URL}/api/auth/profile-phone`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -429,7 +428,7 @@ function Chat() {
 
       const response =
         await fetch(
-          `http://localhost:5000/api/conversations/${conversationId}/delivered`,
+          `${API_URL}/api/conversations/${conversationId}/delivered`,
           {
             method:
               "PATCH",
@@ -476,7 +475,7 @@ function Chat() {
 
       const response =
         await fetch(
-          `http://localhost:5000/api/conversations/${conversationId}/read`,
+          `${API_URL}/api/conversations/${conversationId}/read`,
           {
             method:
               "PATCH",
@@ -600,7 +599,7 @@ function Chat() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/conversations/${conversationId}`,
+            `${API_URL}/api/conversations/${conversationId}`,
             {
               headers: {
                 Authorization:
@@ -713,7 +712,7 @@ function Chat() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/messages/${conversationId}`,
+            `${API_URL}/api/messages/${conversationId}`,
             {
               headers: {
                 Authorization:
@@ -1470,7 +1469,7 @@ function Chat() {
 
       const response =
         await fetch(
-          "http://localhost:5000/api/messages",
+          `${API_URL}/api/messages`,
           {
             method:
               "POST",

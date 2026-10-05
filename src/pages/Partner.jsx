@@ -1,6 +1,7 @@
 import "./Partner.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import API_URL from "../api";
 
 function Partner() {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ function Partner() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/conversations",
+        `${API_URL}/api/conversations`,
         {
           method: "POST",
           headers: {
