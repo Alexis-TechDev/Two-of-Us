@@ -1,0 +1,152 @@
+.partner {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #f7f7f7;
+}
+
+.partner-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.partner-box .back {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 40px;
+  color: #111111;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.partner-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.partner-header .logo {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #111111;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.partner-header h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.partner-header p {
+  color: #777777;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.partner-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.partner-box .field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.partner-box label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.partner-box input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.partner-box input:focus {
+  border-color: #111111;
+}
+
+.partner-box .button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #111111;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.partner-box .button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.partner-box .error {
+  color: #d93025;
+  font-size: 13px;
+}
+
+.partner {
+  min-height: 100dvh;
+  background:
+    radial-gradient(ellipse at 8% 10%, rgba(240, 82, 11, 0.11), transparent 34%),
+    radial-gradient(ellipse at 92% 90%, rgba(7, 94, 170, 0.12), transparent 32%),
+    #f7f9fc;
+}
+
+.partner-box {
+  border: 1px solid rgba(23, 42, 59, 0.09);
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(23, 42, 59, 0.08);
+}
+
+.partner-header .logo {
+  position: static;
+  left: auto;
+  transform: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+.partner-header .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partner-header h1 {
+  color: #172a3b;
+  line-height: 1.2;
+}
+
+.partner-header p {
+  color: #687987;
+}
+
+.partner-box input:focus {
+  border-color: #075eaa;
+}
+
+.partner-box .button {
+  background: #075eaa;
+  border-radius: 8px;
+}

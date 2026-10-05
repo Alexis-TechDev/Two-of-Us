@@ -1,0 +1,297 @@
+.register {
+  min-height: 100vh;
+  padding: 24px;
+  background: #ffffff;
+}
+
+.register-box {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.register-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 46px;
+}
+
+.back {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  background: #f1f1f1;
+  color: #111111;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.register-content {
+  margin-top: 54px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 1.15;
+  color: #111111;
+  letter-spacing: -0.8px;
+}
+
+.text {
+  margin-top: 12px;
+  color: #6b6b6b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.form {
+  margin-top: 32px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  height: 54px;
+  padding: 0 16px;
+  border: 1px solid #dddddd;
+  border-radius: 13px;
+  outline: none;
+  background: #ffffff;
+  color: #111111;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+}
+
+.field input::placeholder {
+  color: #999999;
+}
+
+.field input:focus {
+  border-color: #111111;
+}
+
+.button {
+  width: 100%;
+  height: 54px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 14px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 28px;
+  text-align: center;
+  color: #6b6b6b;
+  font-size: 14px;
+}
+
+.login-link {
+  margin-left: 5px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.password {
+  position: relative;
+}
+
+.password input {
+  padding-right: 70px;
+}
+
+.show {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*---New css------*/
+
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.field input:focus {
+  border-color: #111111;
+}
+
+.password {
+  position: relative;
+}
+
+.password input {
+  padding-right: 70px;
+}
+
+.show {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error {
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffecec;
+  color: #c62828;
+  font-size: 14px;
+}
+
+.message {
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #eaf8ee;
+  color: #218838;
+  font-size: 14px;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register {
+  min-height: 100dvh;
+  background:
+    radial-gradient(ellipse at 8% 90%, rgba(240, 82, 11, 0.09), transparent 33%),
+    #f7f9fc;
+}
+
+.register-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: static;
+  min-height: 0;
+  margin: 30px 0 24px;
+}
+
+.register-header .logo {
+  display: block;
+  position: static;
+  transform: none;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.register-header h1,
+.register-header p {
+  width: 100%;
+}
+
+.register-header h1 {
+  margin: 0;
+  color: #172a3b;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.register-header p {
+  margin: 9px 0 0;
+  color: #687987;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.register .field label {
+  color: #24394a;
+}
+
+.register .field input:focus {
+  border-color: #075eaa;
+}
+
+.register .button {
+  border-radius: 8px;
+  background: #075eaa;
+}
+
+.register a {
+  color: #075eaa;
+}
